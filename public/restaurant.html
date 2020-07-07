@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9a9c81b339.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+</head>
+
+<body>
+
+    <!--  Header section  -->
+    <div id="header">
+        <a href="../index.html">
+            <h1>Yelpington</h1>
+        </a>
+    </div>
+    <div class="middleContainer">
+        <!--  Map  -->
+        <div id='map'></div>
+        <!--  SideBar  -->
+        <nav>
+            <ul>
+                <li id="restId"></li>
+                <br />
+                <li id="name"></li>
+                <br />
+                <li id="address"></li>
+                <br />
+                <li id="phone"></li>
+                <br />
+                <li id="webSite"></li>
+                <br />
+                <li id="hours">Hours: </li>
+            </ul>
+        </nav>
+    </div>
+    <!--  Comments   -->
+    <div id="notes">Comments: <br />
+        <ul id='noteList'></ul>
+    </div>
+
+    <!--  Footer section  -->
+    <div class="footer">
+        <div class="footerTitle">QUESTIONS OR COMMENTS? <SPAN id="footerTitleBold"> GET IN TOUCH:</SPAN>
+        </div>
+        <!-- Footer form section  -->
+        <div class="formSection">
+            <div>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                <input type="text" id="email" name="lastname" placeholder="Your email" required>
+            </div>
+            <input type="text" id="subject" name="subject" placeholder="Write something.." style="height:150px">
+            <input type="submit" class="submitButton" value="Submit">
+        </div>
+        <!--  Footer link section  -->
+        <div class="footerMediaLink footerAddress">
+            <a><i class="fas fa-home"></i> 1235 Main St.<br />Any Old Town<br />My
+                State<br />65432</a>
+        </div>
+        <div class="footerMediaLink footerPhone"> <a><i class="fas fa-phone"></i> 802.123.9876</a>
+        </div>
+        <div class="footerMediaLink footerEmail"> <a><i class="fas fa-envelope"></i></a>
+            info@yelpington.com
+        </div>
+        <div class="footerMediaLink footerTwitter"> <a><i class="fab fa-twitter"></i> #Yelpington</a>
+        </div>
+        <div class="footerMediaLink footerInstagram"> <a><i class="fab fa-instagram"></i>
+                yelpington</a>
+        </div>
+        <div class="footerMediaLink footerWebsite"> <a><i class="fas fa-globe"></i> yelpington.com</a>
+        </div>
+        <div class="footerMediaLink footerFacebook"> <a><i class="fab fa-facebook"></i> Yelpington</a>
+        </div>
+    </div>
+
+    <script src="../restaurant.js"></script>
+</body>
+
+</html>

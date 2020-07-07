@@ -1,0 +1,169 @@
+/**** Header  *****/
+
+#header {
+    display: flex;
+    color: white;
+    justify-content: center;
+    background-color: rgb(31, 31, 97);
+    margin-bottom: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/********* middle container for sidebar and map ********/
+
+.middleContainer {
+    display: flex;
+}
+
+#restId {
+    display: none;
+}
+
+/*********** sidebar **********/
+
+nav {
+    display: flex;
+    order: 1;
+    height: 50vh;
+    width: 30vw;
+    color: red;
+    font-weight: 600;
+    justify-content: center;
+    align-content: left;
+    background-color: rgb(31, 31, 97);
+    margin-right: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/********* Map section**********/
+
+#map {
+    display: flex;
+    order: 2;
+    height: 50vh;
+    width: 70vw;
+ 
+}
+
+/****Comments *********/
+
+#notes {
+    display: flex;
+    height: auto;
+    color: white;
+    font-weight: 600;
+    justify-content: center;
+    align-content: top;
+    background-color: rgb(31, 31, 97);
+    margin-top: 1em;
+    padding: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/********** Footer  *************/
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1fr);
+    grid-gap: 1rem;
+    grid-template-areas: "footerTitle       footerTitle        footerTitle      footerTitle""footerTitle       footerTitle        footerTitle      footerTitle""footerTitle       footerTitle        footerTitle      footerTitle""footerTitle       footerTitle        footerTitle      footerTitle""formSection       formSection . .""formSection       formSection        footerAddress    footerTwitter""formSection       formSection        footerAddress    footerInstagram""formSection       formSection        footerPhone      footerWebsite""formSection       formSection        footerEmail      footerFacebook""formSection       formSection . .";
+    background-color: rgb(31, 31, 97);
+    margin-top: 1em;
+}
+
+.footerTitle {
+    grid-area: footerTitle;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1em;
+    color: white;
+    font-weight: 600;
+}
+
+.footerMediaLink {
+    color: white;
+    font-weight: 600;
+}
+
+#footerTitleBold {
+    font-weight: bold;
+}
+
+.footerAddress {
+    grid-area: footerAddress;
+    justify-content: center;
+}
+
+.footerPhone {
+    grid-area: footerPhone;
+}
+
+.footerEmail {
+    grid-area: footerEmail;
+}
+
+.footerTwitter {
+    grid-area: footerTwitter;
+}
+
+.footerInstagram {
+    grid-area: footerInstagram;
+}
+
+.footerWebsite {
+    grid-area: footerWebsite;
+}
+
+.footerFacebook {
+    grid-area: footerFacebook;
+}
+
+/****form styling*****/
+
+input[type=text],
+select,
+textarea {
+    width: 96%;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+#fname {
+    width: 48%;
+}
+
+#email {
+    width: 48%;
+}
+
+/* When moving the mouse over the submit button, add a darker  color */
+
+.submitButton {
+    background-color: cornflowerblue;
+    border: #002633;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    border: none;
+    background-color: #008080;
+}
+
+.formSection {
+    grid-area: formSection;
+    border-radius: 5px;
+    margin-left: 1em;
+}
