@@ -9,7 +9,7 @@ let hours = document.getElementById('hours')
 let notes = document.getElementById('notes')
 let noteContainer = document.getElementById('noteList')
 
-// get restaurant data to populate sidebar details
+// get restaurant data
 async function getRest(id) {
     let restItem = await fetch(`https://json-server.burlingtoncodeacademy.now.sh/restaurants/${id}`)
         .then((response) => {
@@ -38,7 +38,7 @@ async function getRest(id) {
 
 getRest(id)
 
-// get  restaurant address and website - convert address to lat lon using nominatum
+// convert address to lat lon using nominatum
 async function getLatLon(address, website, name) {
     let pinLocation = await fetch(`https://nominatim.openstreetmap.org/search/?q=${address}&format=json`)
         .then((data) => {

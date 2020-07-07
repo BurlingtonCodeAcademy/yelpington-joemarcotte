@@ -1,18 +1,19 @@
 /**** Header  *****/
 
 #header {
+
+    color: rgb(4, 4, 41);
+
     display: flex;
-    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     justify-content: center;
-    background-color: rgb(31, 31, 97);
     margin-bottom: 1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a {
+    color: rgb(4, 4, 41);
+    font-weight: 100;
     text-decoration: none;
-    color: white;
-    font-weight: 600;
 }
 
 /********* middle container for sidebar and map ********/
@@ -28,53 +29,51 @@ a {
 /*********** sidebar **********/
 
 nav {
-    display: flex;
-    order: 1;
-    height: 50vh;
-    width: 30vw;
-    color: red;
-    font-weight: 600;
-    justify-content: center;
     align-content: left;
-    background-color: rgb(31, 31, 97);
+    color: red;
+    display: flex;
+    font-weight: 100;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 50vh;
+    justify-content: center;
     margin-right: 1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    order: 1;
+    width: 30vw;
 }
 
 /********* Map section**********/
 
 #map {
     display: flex;
-    order: 2;
     height: 50vh;
+    order: 2;
     width: 70vw;
- 
+
 }
 
 /****Comments *********/
 
 #notes {
-    display: flex;
-    height: auto;
-    color: white;
-    font-weight: 600;
-    justify-content: center;
     align-content: top;
-    background-color: rgb(31, 31, 97);
+    color: rgb(4, 4, 41);
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    height: auto;
+    justify-content: center;
     margin-top: 1em;
     padding: 1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /********** Footer  *************/
 
 .footer {
+
     display: grid;
+    grid-gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(1fr);
-    grid-gap: 1rem;
     grid-template-areas: "footerTitle       footerTitle        footerTitle      footerTitle""footerTitle       footerTitle        footerTitle      footerTitle""footerTitle       footerTitle        footerTitle      footerTitle""footerTitle       footerTitle        footerTitle      footerTitle""formSection       formSection . .""formSection       formSection        footerAddress    footerTwitter""formSection       formSection        footerAddress    footerInstagram""formSection       formSection        footerPhone      footerWebsite""formSection       formSection        footerEmail      footerFacebook""formSection       formSection . .";
-    background-color: rgb(31, 31, 97);
     margin-top: 1em;
 }
 
@@ -131,13 +130,13 @@ nav {
 input[type=text],
 select,
 textarea {
-    width: 96%;
-    padding: 12px;
     border: 1px solid;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
+    padding: 12px;
+    width: 96%;
 }
 
 #fname {
@@ -151,14 +150,14 @@ textarea {
 /* When moving the mouse over the submit button, add a darker  color */
 
 .submitButton {
-    background-color: cornflowerblue;
+    background-color: rgb(181, 196, 223);
     border: #002633;
-    margin-bottom: 1em;
     cursor: pointer;
+    margin-bottom: 1em;
 }
 
 .submitButton:hover {
-    border: none;
+    border: solid;
     background-color: #008080;
 }
 
